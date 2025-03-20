@@ -12,6 +12,10 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+server:
+    port: 8083
+
 eureka:
   client:
     service-url:
