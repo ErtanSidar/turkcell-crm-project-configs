@@ -12,3 +12,28 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+server:
+    port: 8083
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://eurekaserver-prod:8761/eureka"
+    register-with-eureka: true
+    fetch-registry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
