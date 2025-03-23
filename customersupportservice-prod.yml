@@ -1,0 +1,11 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@customer-support-service-db-service:27018/customersupportservice?authSource=admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://eurekaserverservice:8761/eureka"
+    register-with-eureka: true
+    fetch-registry: true
