@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://plan-service-db-service:5434/planservice
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://eurekaserverservice:8761/eureka"
+    register-with-eureka: true
+    fetch-registry: true
