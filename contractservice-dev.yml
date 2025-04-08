@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://contract-service-db:3307/contractservice?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://contract-service-db:3306/contractservice?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: admin
     password: test
     driver-class-name: com.mysql.cj.jdbc.Driver
