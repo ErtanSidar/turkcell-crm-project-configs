@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://plan-service-db:5434/planservice
+    url: jdbc:postgresql://plan-service-db:5432/planservice
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
