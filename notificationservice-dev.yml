@@ -16,3 +16,19 @@ eureka:
             trusted:
               packages: "*"
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+
+  mail:
+    host: mail-dev
+    port: 1025
+    username: pair2
+    password: pair2
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: true
+        starttls:
+          enabled: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
