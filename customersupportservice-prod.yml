@@ -2,6 +2,12 @@ spring:
   data:
     mongodb:
       uri: mongodb://root:root@customer-support-service-db-service:27018/customersupportservice?authSource=admin
+  kafka:
+    producer:
+      bootstrap-servers: kafkaservice:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
 
 eureka:
   client:
