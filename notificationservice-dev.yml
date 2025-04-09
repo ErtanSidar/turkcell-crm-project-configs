@@ -4,3 +4,15 @@ eureka:
       defaultZone: "http://eurekaserver:8761/eureka"
     register-with-eureka: true
     fetch-registry: true
+
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      bootstrap-servers: kafka:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
