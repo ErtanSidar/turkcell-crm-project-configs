@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://root:root@customer-support-service-db:27018/customersupportservice?authSource=admin
+      uri: mongodb://root:root@customer-support-service-db:27017/customersupportservice?authSource=admin
   kafka:
     producer:
       bootstrap-servers: kafka:9092
