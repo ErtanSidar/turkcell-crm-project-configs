@@ -3,6 +3,18 @@ spring:
     mongodb:
       uri: mongodb://root:root@analytic-service-db:27017/analyticservice?authSource=admin
 
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: "http://zipkin:9411/api/v2/spans"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
 eureka:
   client:
     service-url:
