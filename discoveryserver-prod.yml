@@ -4,7 +4,7 @@ management:
       probability: 1.0
   zipkin:
     tracing:
-      endpoint: "http://zipkinservice:9411/api/v2/spans"
+      endpoint: "http://zipkin:9411/api/v2/spans"
   metrics:
     export:
       prometheus:
@@ -13,6 +13,6 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: "http://eurekaserverservice:8761/eureka"
+      defaultZone: "http://discoveryserver:8761/eureka"
     register-with-eureka: false
     fetch-registry: false
