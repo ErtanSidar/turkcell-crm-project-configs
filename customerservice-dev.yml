@@ -30,6 +30,10 @@ logging:
     level: "%5p [${spring.application.name:},%X{traceId},%X{spanId}]"
 
 eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: customerservice
+    instance-id: ${spring.application.name}:${random.value}
   client:
     service-url:
       defaultZone: "http://eurekaserver:8761/eureka"
