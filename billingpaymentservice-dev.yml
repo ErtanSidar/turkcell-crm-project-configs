@@ -22,6 +22,14 @@ management:
       prometheus:
         enabled: true
 
+customer:
+  service:
+    url: "http://customerservice:8083"
+
+plan:
+  service:
+    url: "http://planservice:8086"
+
 eureka:
   client:
     service-url:

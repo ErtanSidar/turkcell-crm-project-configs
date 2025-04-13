@@ -22,6 +22,14 @@ management:
       prometheus:
         enabled: true
 
+customer:
+  service:
+    url: "http://localhost:8083"
+
+plan:
+  service:
+    url: "http://localhost:8086"
+
 
 eureka:
   client:
